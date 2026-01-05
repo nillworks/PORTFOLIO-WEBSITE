@@ -24,6 +24,19 @@
 body {
   font-family: 'Open Sans', sans-serif;
 }
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* navigation Bar styles */
+header {
+  background-color: var(--primaryColor);
+  background: url(../images/developer.png), url(../images/header_bg.png),
+    var(--primaryColor);
+  background-repeat: no-repeat;
+  background-position: top left, bottom right;
+}
 .header_area {
   background-color: var(--primaryColor);
   padding-top: 50px;
@@ -67,3 +80,75 @@ nav ul li button {
   border-radius: 5px;
   font-weight: bold;
 }
+
+/* Hero Section Styles */
+#hero_area {
+  margin: 47px 38px 0 230px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#hero_area .hero_banner_details {
+  /* margin: 297px 0 184px 230px; */
+  max-width: 585px;
+}
+#hero_area .hero_banner_details h5 {
+  font-size: 45px;
+  color: var(--dark2Color);
+  margin-bottom: 5px;
+  font-weight: 600;
+}
+#hero_area .hero_banner_details h2 {
+  font-size: 85px;
+  color: var(--dark1Color);
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.hero_banner_details .buttonCta {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+.buttonCta .downloadBtn {
+  background-color: var(--srcColor);
+  padding: 19px 17px;
+  border-radius: 5px;
+}
+.buttonCta .downloadBtn a {
+  background-color: var(--srcColor);
+  padding: 19px 17px;
+  font-size: 20px;
+  font-size: bold;
+  color: white;
+  /* padding-bottom: 184px; */
+}
+.buttonCta .contactBtn {
+  padding: 19px 17px;
+  border-radius: 5px;
+  border: 1px solid var(--srcColor);
+}
+.buttonCta .contactBtn a {
+  padding: 19px 17px;
+  border-radius: 5px;
+  font-size: 20px;
+  color: var(--srcColor);
+  font-weight: bold;
+}
+#hero_area .hero_banner_details p {
+  font-size: 18px;
+  color: var(--dark3Color);
+  margin-bottom: 30px;
+  line-height: 30px;
+}
+#hero_area .hero_banner_images {
+  max-width: 585px;
+  vertical-align: middle;
+}
+#hero_area .hero_banner_images {
+  max-width: 585px;
+  vertical-align: middle;
+}
+
+/* @media only screen and (min-with: 320px) and (max-width: 640px) {
+
+} */
