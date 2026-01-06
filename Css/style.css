@@ -268,11 +268,79 @@ nav ul li button {
   color: var(--dark3Color);
 }
 
+/* Resume Card Style */
+#resume_area {
+  margin-top: 130px;
+  margin-bottom: 113px;
+}
+
+#resume_area .hading_resume {
+  margin-bottom: 113px;
+}
+
+.hading_resume h2 {
+  text-align: center;
+  font-size: var(--fontSizePrimary);
+  font-weight: bold;
+  color: var(--dark1Color);
+}
+
+#resume_area .resume_Card {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 71px;
+  /* justify-content: ; */
+}
+.resume_Card .card_resume {
+  width: 511px;
+  border-bottom: 1px solid var(--dark5Color);
+}
+.card_resume h2 {
+  font-size: 30px;
+  font-weight: bold;
+  color: var(--dark2Color);
+  margin-bottom: 30px;
+}
+.card_resume h4 {
+  font-size: 25px;
+  font-weight: bold;
+  color: var(--dark2Color);
+  margin-bottom: 30px;
+}
+.card_resume h6 {
+  font-size: 20px;
+  font-weight: bold;
+  color: var(--dark3Color);
+  margin-bottom: 15px;
+}
+.card_resume p {
+  font-size: 16px;
+  font-weight: bold;
+  color: var(--dark3Color);
+  line-height: 28px;
+  margin-bottom: 30px;
+}
+
+.buttonCtas {
+  background-color: var(--srcColor);
+  padding: 18px 17px;
+  border: 5px;
+  font-size: 20px;
+  font-weight: bold;
+  margin: 0 auto;
+  text-align: center;
+  color: white;
+}
+.buttonCtas .downloadBtn a {
+  color: white;
+}
+
 /* Mobile Responsive */
 
-@media only screen and (min-with: 320px) and (max-width: 640px) {
+/* @media only screen and (min-with: 320px) and (max-width: 640px) {
   .skills_cards {
     flex-direction: column;
     flex-wrap: wrap;
   }
-}
+} */
