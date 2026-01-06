@@ -29,6 +29,12 @@ img {
   height: auto;
 }
 
+.container {
+  max-width: 1140px;
+  width: 71%;
+  margin: 0 auto;
+}
+
 /* navigation Bar styles */
 header {
   background-color: var(--primaryColor);
@@ -87,6 +93,9 @@ nav ul li button {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  max-width: 1140px;
+  margin: 0 auto;
+  width: 71%;
 }
 #hero_area .hero_banner_details {
   /* margin: 297px 0 184px 230px; */
@@ -149,9 +158,7 @@ nav ul li button {
   vertical-align: middle;
 }
 
-/* @media only screen and (min-with: 320px) and (max-width: 640px) {
-
-} */
+/*  */
 
 /* About Sections Style */
 #About_area {
@@ -168,7 +175,8 @@ nav ul li button {
 .about_container .about_hading {
   padding: 131px 156px;
 }
-.about_hading {
+.about_hading,
+.skills_hading {
   max-width: 827px;
   text-align: center;
   margin: 0 auto;
@@ -200,4 +208,71 @@ nav ul li button {
 .child_info h4 {
   font-size: 12px;
   color: var(--dark2Color);
+}
+
+/* Skill Area Style */
+
+#Skills {
+  padding-top: 130px;
+}
+#Skills .skill_container {
+  width: 71%;
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+.skill_container .skills_hading h2 {
+  font-size: var(--fontSizePrimary);
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+.skills_hading p {
+  margin-bottom: 30px;
+  color: var(--dark3Color);
+  font-size: 18px;
+}
+.skill_container .skills_cards {
+  max-width: 1140px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.skills_cards .child_cards {
+  box-shadow: 0 0 5px var(--dark3Color);
+  border-radius: 5px;
+  padding: 30px;
+  max-width: 267px;
+  transition: 0.5s all ease-in-out;
+}
+.child_cards:hover {
+  transform: translateY(-10px);
+}
+.child_cards img {
+  margin-bottom: 20px;
+  width: 44px;
+  height: 44px;
+}
+.child_cards h4 {
+  margin-bottom: 20px;
+  font-size: 20px;
+  font-weight: bold;
+  color: var(--dark1Color);
+}
+.child_cards p {
+  margin-bottom: 20px;
+  font-size: 16px;
+  line-height: 28px;
+  color: var(--dark3Color);
+}
+
+/* Mobile Responsive */
+
+@media only screen and (min-with: 320px) and (max-width: 640px) {
+  .skills_cards {
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
 }
