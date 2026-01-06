@@ -21,8 +21,9 @@
 <body>
 
 
-  <header class="header_area">
-    <nav>
+  <header class="header_area" class="container">
+
+    <nav class="container">
 
       <!-- logo images-->
       <div class="logo">
@@ -40,33 +41,23 @@
     </nav>
 
     <!-- Hero Header -->
-    <section id="hero_area">
+    <section id="banner" class="container">
 
-      <!-- Banner Details -->
-      <div class="hero_banner_details">
-        <h5>Hi, I am</h5>
-        <h2>Mary Hardy</h2>
+      <div class="banner_content">
+        <h2>Hi, I am</h2>
+        <h1>Mary Hardy</h1>
         <p>Shot what able cold new see hold.Friendly as an betrayed formerly he. Morning because as to society behaved
           moments.</p>
 
-        <!--Hero Buttons -->
-        <div class="buttonCta">
-          <div class="downloadBtn">
-            <img src="images/icons/downloadIcons.png" alt="icons">
-            <a href="#">Download CV</a>
-          </div>
-          <div class="contactBtn">
-            <img src="images/icons/contactBtn.png" alt="icons">
-            <a href="#">Contact</a>
-          </div>
+        <!-- btn -->
+        <div>
+          <button class="btn">Download CV</button>
+          <button class="btn">Contact</button>
         </div>
 
       </div>
-
-      <!-- Banner contents -->
-      <div class="hero_banner_images">
+      <div class="banner_img">
         <img src="images/hardy.png" alt="img">
-        <!-- <img src="images/header_bg.png" alt=""> -->
       </div>
 
     </section>
@@ -260,7 +251,7 @@
 
   </main>
 
-  <footer>
+  <footer class="footer">
     <section id="footer" class="container">
 
       <div class="social">
@@ -280,13 +271,17 @@
 
       </div>
 
-      <Form>
+      <Form class="forms">
         <h2>Let’s Message me</h2>
 
         <div class="inputs">
           <input type="text" name="" id="" placeholder="Your Name">
           <input type="email" name="" id="" placeholder="Your Name">
-          <textarea name="" id="" placeholder="Message"></textarea>
+          <textarea name="" id="" placeholder="Message" cols="50" rows="10"></textarea>
+
+          <div class="btnCta">
+            <input class="btn" type="submit" value="submit">
+          </div>
         </div>
 
       </Form>
