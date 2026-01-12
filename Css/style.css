@@ -42,7 +42,7 @@ header {
   background: url(../images/developer.png), url(../images/header_bg.png),
     var(--primaryColor);
   background-repeat: no-repeat;
-  background-position: left bottom, right bottom;
+  background-position: 23px 38px, bottom right;
 }
 
 .logo h2 {
@@ -91,7 +91,8 @@ nav ul li button {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 0 auto;
+  /* margin: 0 auto; */
+  position: relative;
 }
 #banner .banner_content {
   max-width: 585px;
@@ -125,17 +126,16 @@ nav ul li button {
   cursor: pointer;
   margin-right: 15px;
 }
-#banner .banner_img {
+#banner .banner_img img {
   max-width: 585px;
+  /* position: absolute;
+  bottom: 0;
+  right: 0; */
   vertical-align: middle;
 }
-.banner_img img {
-}
-/* .containerse {
-  max-width: 1140px;
-  width: 71%;
-  margin: 0 auto;
+/* .banner_img img {
 } */
+
 /*  */
 
 /*  */
